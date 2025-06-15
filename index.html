@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="styles.css"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- Главная страница видеокурса по HTML/CSS -->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center text-white">
+                            Видео курс по вёрстке на HTML/CSS
+                        </h1>
+                        <div
+                            class="itd-play"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"
+                        >
+                            <div class="itd-triangle"></div>
+                        </div>
+                        <a
+                            href="#footer"
+                            class="btn btn-itd btn-lg text-uppercase"
+                            >заказать</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center text-uppercase color1 mb-5">
+                            О курсе
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="itd-circle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="30"
+                                height="30"
+                                fill="currentColor"
+                                class="bi bi-list-ol"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5"
+                                />
+                                <path
+                                    d="M1.713 11.865v-.474H2c.217 0 .363-.137.363-.317 0-.185-.158-.31-.361-.31-.223 0-.367.152-.373.31h-.59c.016-.467.373-.787.986-.787.588-.002.954.291.957.703a.595.595 0 0 1-.492.594v.033a.615.615 0 0 1 .569.631c.003.533-.502.8-1.051.8-.656 0-1-.37-1.008-.794h.582c.008.178.186.306.422.309.254 0 .424-.145.422-.35-.002-.195-.155-.348-.414-.348h-.3zm-.004-4.699h-.604v-.035c0-.408.295-.844.958-.844.583 0 .96.326.96.756 0 .389-.257.617-.476.848l-.537.572v.03h1.054V9H1.143v-.395l.957-.99c.138-.142.293-.304.293-.508 0-.18-.147-.32-.342-.32a.33.33 0 0 0-.342.338zM2.564 5h-.635V2.924h-.031l-.598.42v-.567l.629-.443h.635z"
+                                />
+                            </svg>
+                        </div>
+                        <h5 class="text-center">Структурированный материал</h5>
+                        <div class="line"></div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="itd-circle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="30"
+                                height="30"
+                                fill="currentColor"
+                                class="bi bi-currency-dollar"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z"
+                                />
+                            </svg>
+                        </div>
+                        <h5 class="text-center">Символическая цена</h5>
+                        <div class="line"></div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="itd-circle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="30"
+                                height="30"
+                                fill="currentColor"
+                                class="bi bi-bar-chart-line"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1zm1 12h2V2h-2zm-3 0V7H7v7zm-5 0v-3H2v3z"
+                                />
+                            </svg>
+                        </div>
+                        <h5 class="text-center">
+                            Актуальность и пожизненный доступ
+                        </h5>
+                        <div class="line"></div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="itd-circle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="30"
+                                height="30"
+                                fill="currentColor"
+                                class="bi bi-code-slash"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"
+                                />
+                            </svg>
+                        </div>
+                        <h5 class="text-center">
+                            Практические уроки и задания
+                        </h5>
+                        <div class="line"></div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="itd-circle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="30"
+                                height="30"
+                                fill="currentColor"
+                                class="bi bi-file-earmark-play"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M6 6.883v4.234a.5.5 0 0 0 .757.429l3.528-2.117a.5.5 0 0 0 0-.858L6.757 6.454a.5.5 0 0 0-.757.43z"
+                                />
+                                <path
+                                    d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"
+                                />
+                            </svg>
+                        </div>
+                        <h5 class="text-center">34 видео в курсе (5 часов)</h5>
+                        <div class="line"></div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="itd-circle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="30"
+                                height="30"
+                                fill="currentColor"
+                                class="bi bi-phone"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+                                />
+                                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                            </svg>
+                        </div>
+                        <h5 class="text-center">Просмотр со смартфона</h5>
+                        <div class="line"></div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="itd-circle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="30"
+                                height="30"
+                                fill="currentColor"
+                                class="bi bi-question-lg"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14"
+                                />
+                            </svg>
+                        </div>
+                        <h5 class="text-center">
+                            Дополнительные полезные материалы
+                        </h5>
+                        <div class="line"></div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="itd-circle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="30"
+                                height="30"
+                                fill="currentColor"
+                                class="bi bi-hand-thumbs-up"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2 2 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a10 10 0 0 0-.443.05 9.4 9.4 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a9 9 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.2 2.2 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.9.9 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"
+                                />
+                            </svg>
+                        </div>
+                        <h5 class="text-center">Отсутствует реклама</h5>
+                        <div class="line"></div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="itd-circle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="30"
+                                height="30"
+                                fill="currentColor"
+                                class="bi bi-people"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"
+                                />
+                            </svg>
+                        </div>
+                        <h5 class="text-center">
+                            Курс доступен в Telegram, ВК и на Udemy
+                        </h5>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="for-who">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center text-uppercase color2 mb-5">
+                            курс для тех, кто
+                        </h2>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-md-6 col-sm-12">
+                        <h5 class="text-center">
+                            Хочет научиться создавать сайты своими силами
+                        </h5>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <h5 class="text-center">
+                            Учится современным инструментам разработки
+                        </h5>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <h5 class="text-center">
+                            Еще не знает язык HTML и CSS, но хочет выучить
+                        </h5>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <h5 class="text-center">
+                            Хочет стать крутым мастером и зарабатывать деньги
+                        </h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <a
+                            href="#footer"
+                            class="btn btn-lg text-uppercase btn-itd"
+                            >заказать</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="schedule">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center text-uppercase color1 mb-3">
+                            Программа курса
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <h4 class="text-center fw-bold mb-3 mt-3">
+                            Модуль 1 <br />(HTML)
+                        </h4>
+                        <div
+                            class="accordion accordion-flush"
+                            id="accordionOne"
+                        >
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne-1"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseOne-1"
+                                    >
+                                        Введение
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseOne-1"
+                                    class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionOne"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Краткий обзор того, что мы будем изучать
+                                        в данном видеокурсе.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo-1"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseTwo-1"
+                                    >
+                                        Установка браузера и редактора кода
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseTwo-1"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionOne"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        В этом уроке мы установим браузер Google
+                                        Chrome и редактор кода VS Code.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree-1"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseThree-1"
+                                    >
+                                        Обзор функций редактора
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseThree-1"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionOne"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Рассмотрим функции редактора VS Code и
+                                        узнаем как с ним работать.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour-1"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseFour-1"
+                                    >
+                                        Первые HTML теги
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseFour-1"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionOne"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Выучим свои первые HTML теги, с помощью
+                                        которых и создаются любые сайты.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFive-1"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseFive-1"
+                                    >
+                                        Как задавать путь к файлу
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseFive-1"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionOne"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Научимся правильно указывать путь к
+                                        файлам изображений и другим страницам
+                                        сайта.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseSix-1"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseSix-1"
+                                    >
+                                        Создание списка
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseSix-1"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionOne"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Научимся создавать списки на своем
+                                        сайте.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseSeven-1"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseSeven-1"
+                                    >
+                                        Создание таблиц
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseSeven-1"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionOne"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        В этом уроке мы рассмотри, как создавать
+                                        таблицы на языке HTML.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseEight-1"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseEight-1"
+                                    >
+                                        Работа с текстом
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseEight-1"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionOne"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        В этом видео уроке мы узнаем, как
+                                        работать с текстом.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseNine-1"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseNine-1"
+                                    >
+                                        Создание формы
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseNine-1"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionOne"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Научимся создавать формы для ввода
+                                        текста, флажки и кнопки.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTen-1"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseTen-1"
+                                    >
+                                        Универсальные атрибуты
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseTen-1"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionOne"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Рассмотрим универсальные атрибуты,
+                                        которые можно добавлять любому HTML
+                                        тегу.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseEleven-1"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseEleven-1"
+                                    >
+                                        Цвет RGB и спецсимволы
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseEleven-1"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionOne"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Научимся работать с RGB цветом и
+                                        добавлять специальные символы на свой
+                                        сайт.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <h4 class="text-center fw-bold mb-3 mt-3">
+                            Модуль 2 <br />(CSS)
+                        </h4>
+                        <div
+                            class="accordion accordion-flush"
+                            id="accordionTwo"
+                        >
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne-2"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseOne-2"
+                                    >
+                                        CSS селекторы
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseOne-2"
+                                    class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionTwo"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Рассмотрим основные CSS селекторы,
+                                        узнаем что это такое и зачем они нужны.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo-2"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseTwo-2"
+                                    >
+                                        Работа с изображениями
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseTwo-2"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionTwo"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Научимся работать с изображениями на
+                                        языке CSS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree-2"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseThree-2"
+                                    >
+                                        Границы
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseThree-2"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionTwo"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        В этом уроке мы научимся создавать
+                                        границы вокруг любого элемента на сайте
+                                        и стилизовать их.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour-2"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseFour-2"
+                                    >
+                                        Размеры элементов
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseFour-2"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionTwo"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Разберемся, как изменять размеры
+                                        элементов на странице с помощью CSS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFive-2"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseFive-2"
+                                    >
+                                        Работа со шрифтом
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseFive-2"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionTwo"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Научимся работать со шрифтами. Установим
+                                        свой шрифт на сайт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseSix-2"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseSix-2"
+                                    >
+                                        Блочная модель документа
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseSix-2"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionTwo"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        В этом уроке мы поговорим про блочную
+                                        модель документа и научимся пользоваться
+                                        блочной моделью.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseSeven-2"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseSeven-2"
+                                    >
+                                        Псевдоклассы и псевдоэлементы
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseSeven-2"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionTwo"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Псевдоклассы и псевдоэлементы на языке
+                                        CSS позволяют расширять основные
+                                        возможности языка, которые мы уже
+                                        выучили.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseEight-2"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseEight-2"
+                                    >
+                                        CSS Flexbox
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseEight-2"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionTwo"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        В этом уроке мы изучим базовые приемы
+                                        Flexbox верстки и будем применять их в
+                                        следующем модуле.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseNine-2"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseNine-2"
+                                    >
+                                        Адаптивная версия сайта
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseNine-2"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionTwo"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        В этом уроке мы будем учиться создавать
+                                        адаптивную сетку на CSS. Так же научимся
+                                        работать с переменными и функцией calc.
+                                        Узнаем, как создавать медиа-запросы,
+                                        чтобы сделать адаптивную версию своего
+                                        сайта для мобильных устройств. Научимся
+                                        создавать макет с 12-колончатой сеткой в
+                                        Photoshop, сравним нашу сетку с сеткой
+                                        Bootstrap 5, а так же научимся её
+                                        подключать и узнаем как проверять свой
+                                        сайт на эмуляторе мобильных устроств
+                                        прямо с браузера на ПК.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTen-2"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseTen-2"
+                                    >
+                                        Домашнее задание
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseTen-2"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionTwo"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Задание для практики по теме 'создание
+                                        адаптивной сетки на CSS'.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <h4 class="text-center fw-bold mb-3 mt-3">
+                            Модуль 3 <br />(Практика)
+                        </h4>
+                        <div
+                            class="accordion accordion-flush"
+                            id="accordionThree"
+                        >
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne-3"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseOne-3"
+                                    >
+                                        Верстка меню сайта
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseOne-3"
+                                    class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionThree"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Урок, в котором мы будем верстать
+                                        фрагмент современного сайта, используя
+                                        все полученные ранее знания.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo-3"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseTwo-3"
+                                    >
+                                        Домашнее задание
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseTwo-3"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionThree"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Домашнее задание для закрепления
+                                        изученного материала в предыдущем уроке.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree-3"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseThree-3"
+                                    >
+                                        Верстка фрагмента сайта
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseThree-3"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionThree"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Урок, в котором мы будем верстать
+                                        фрагмент современного сайта, используя
+                                        все полученные ранее знания.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour-3"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseFour-3"
+                                    >
+                                        Домашнее задание
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseFour-3"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionThree"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Домашнее задание для закрепления
+                                        изученного материала в предыдущем уроке.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFive-3"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseFive-3"
+                                    >
+                                        Верстка фрагмента сайте
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseFive-3"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionThree"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Урок, в котором мы будем верстать
+                                        фрагмент современного сайта, используя
+                                        все полученные ранее знания.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseSix-3"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseSix-3"
+                                    >
+                                        Домашнее задание
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseSix-3"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionThree"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Домашнее задание для закрепления
+                                        изученного материала в предыдущем уроке.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseSeven-3"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseSeven-3"
+                                    >
+                                        Photoshop для верстальщика
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseSeven-3"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionThree"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        В этом уроке мы рассмотрим графический
+                                        редактор Photoshop и научимся основным
+                                        приемам, которые могут пригодиться
+                                        верстальщику.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseEight-3"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseEight-3"
+                                    >
+                                        Верстка фрагмента сайте
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseEight-3"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionThree"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Урок, в котором мы будем верстать
+                                        фрагмент современного сайта, используя
+                                        все полученные ранее знания.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseNine-3"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseNine-3"
+                                    >
+                                        Домашнее задание
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseNine-3"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionThree"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Домашнее задание для закрепления
+                                        изученного материала в предыдущем уроке.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTen-3"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseTen-3"
+                                    >
+                                        Финальный проект-задание
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseTen-3"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionThree"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Подведение итогов и финальный проект,
+                                        который вы сможете выполнить
+                                        самостоятельно и добавить эту работу
+                                        себе в портфолио.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseEleven-3"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseEleven-3"
+                                    >
+                                        Бонусы
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseEleven-3"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionThree"
+                                >
+                                    <div class="accordion-body fst-italic">
+                                        Вы получите все исходные коды к лекциям
+                                        и домашним заданиям этого модуля,
+                                        дополнительные материалами, которые
+                                        будут вам полезны при разработке и
+                                        ссылки на большое количество проверенных
+                                        онлайн ресурсов, которые помогут вам при
+                                        создании сайта.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="learning">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center text-uppercase color2 mb-5">
+                            Процесс обучения
+                        </h2>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-9 col-sm-12">
+                        <h5>
+                            Курс по HTML и CSS доступен в специальном Телеграм
+                            канале в удобной форме. Также вы будете приглашены в
+                            группу, где можно будет обсудить материал и код с
+                            другими участниками, и задать свои вопросы.
+                        </h5>
+                        <h5>Можно обучаться в специальной группе ВК.</h5>
+                        <h5>
+                            Также курс доступен на Udemy. К сожалению,
+                            минимальная цена на курс, которую там можно
+                            установить 1799 рублей. Но если Вам удобнее
+                            обучаться на Udemy, то можете приобрести курс
+                            <a
+                                href="https://placehold.co/"
+                                target="_blank"
+                                >тут.</a
+                            >
+                        </h5>
+                        <h5>
+                            Курс в Телеграм (ВК) стоит 800 рублей - дешевле чем
+                            на Udemy. Так как я не завишу от платформ обучения,
+                            я смог поставить более низкую цену для вас.
+                        </h5>
+                        <h5>
+                            Я старался делать обучающие видео таким образом,
+                            чтобы их можно было смотреть с любого устройства, но
+                            рекомендуется использовать веб версию Телеграм или
+                            desktop приложение. Таким образом вам будет намного
+                            удобнее просматривать видео за своим ПК или
+                            ноутбуком с большим монитором.
+                        </h5>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 mb-sm-5 mt-sm-5 text-center">
+                        <img
+                            src="https://placehold.co/500x800/png"
+                            alt="phone-placeholder"
+                            class="img-fluid"
+                        />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <a
+                            href="#footer"
+                            class="btn btn-lg text-uppercase btn-itd"
+                            >заказать</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-author">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center text-uppercase color1 mb-5">
+                            Об авторе
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-9 col-lg-12">
+                        <h4>Иванов Иван Иванович</h4>
+                        <p>Занимаюсь веб-разработкой с 2013 года.</p>
+                        <p>
+                            В 2015 году основал обучающий YouTube канал. Делюсь
+                            своими знаниями в области программирования и
+                            создания сайтов. Сформировал свою собственную
+                            методику обучения, которая позволяет ученикам
+                            максимально эффективно осваивать изучаемый материал.
+                        </p>
+                        <p>
+                            Обучаю языкам HTML, CSS, JavaScript, PHP, работе с
+                            препроцессорами, сборщиками и системой контроля
+                            версий Git, а также многому другому из мира
+                            веб-технологий. Уже более тысячи моих учеников
+                            научились создавать сайты самостоятельно и
+                            зарабатывать на этом деньги.
+                        </p>
+                        <p>
+                            В этом видео курсе я хочу научить вас основам
+                            сайтостроения - это языки HTML и CSS. Эти языки
+                            являются основой и знать их должен каждый, кто хочет
+                            развиваться в этой области. Вы получите знания,
+                            которые нужны в самом начале пути любого
+                            веб-разработчика и будите их использовать на
+                            протяжение всего своего пути. Вся теоретическая
+                            информация разложена по полочкам, доступно
+                            объясняется и подкрепляется практическими заданиями
+                            и домашними работами. Курс намерено не содержит
+                            лишней информации, тем самым позволяет лучше освоить
+                            материал, который действительно важен.
+                        </p>
+                    </div>
+                    <div class="col-xl-3 col-lg-12 text-center">
+                        <img
+                            src="https://placehold.co/400x600/png"
+                            alt="Author Image"
+                            class="img-fluid itd-img"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center text-uppercase color2 mb-5">
+                            Отзывы покупателей
+                        </h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100 p-4 border-0 shadow-sm">
+                            <div class="d-flex flex-column align-items-center">
+                                <div
+                                    class="rounded-circle overflow-hidden mb-3 rounded-circle"
+                                >
+                                    <img
+                                        src="https://placehold.co/100x100/png"
+                                        alt="User Photo"
+                                        class="img-fluid w-100 h-100 img-cover"
+                                    />
+                                </div>
+                                <h5 class="fw-bold mb-2">Анна Петрова</h5>
+                            </div>
+                            <div class="card-body p-0">
+                                <p class="mb-2">
+                                    Я прошла этот курс с нуля и осталась очень
+                                    довольна. Материал изложен структурировано,
+                                    все объяснения понятны даже для новичка.
+                                    Особенно понравилось, что после каждого
+                                    блока есть практические задания.
+                                </p>
+                                <p class="mb-0">
+                                    Благодаря поддержке в чате я быстро
+                                    разобралась с трудными моментами. Теперь
+                                    уверенно верстаю свои первые сайты и уже
+                                    получила первый заказ!
+                                </p>
+                            </div>
+                            <div class="line2 mt-4"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100 p-4 border-0 shadow-sm">
+                            <div class="d-flex flex-column align-items-center">
+                                <div
+                                    class="rounded-circle overflow-hidden mb-3 rounded-circle"
+                                >
+                                    <img
+                                        src="https://placehold.co/100x100/png"
+                                        alt="User Photo"
+                                        class="img-fluid w-100 h-100 img-cover"
+                                    />
+                                </div>
+                                <h5 class="fw-bold mb-2">Игорь Смирнов</h5>
+                            </div>
+                            <div class="card-body p-0">
+                                <p class="mb-2">
+                                    Очень понравился формат обучения: короткие
+                                    видео, много практики, поддержка автора. Все
+                                    уроки можно пересматривать в удобное время,
+                                    что для меня было важно.
+                                </p>
+                                <p class="mb-0">
+                                    После курса я стал увереннее работать с HTML
+                                    и CSS, теперь могу самостоятельно сверстать
+                                    лендинг или небольшой сайт. Рекомендую всем,
+                                    кто хочет быстро освоить основы!
+                                </p>
+                            </div>
+                            <div class="line2 mt-4"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100 p-4 border-0 shadow-sm">
+                            <div class="d-flex flex-column align-items-center">
+                                <div
+                                    class="rounded-circle overflow-hidden mb-3 rounded-circle"
+                                >
+                                    <img
+                                        src="https://placehold.co/100x100/png"
+                                        alt="User Photo"
+                                        class="img-fluid w-100 h-100 img-cover"
+                                    />
+                                </div>
+                                <h5 class="fw-bold mb-2">Мария Кузнецова</h5>
+                            </div>
+                            <div class="card-body p-0">
+                                <p class="mb-2">
+                                    Курс превзошёл мои ожидания! Всё объясняется
+                                    простым языком, много примеров и домашних
+                                    заданий. Очень понравилась обратная связь от
+                                    автора и возможность задать вопрос в чате.
+                                </p>
+                                <p class="mb-0">
+                                    Теперь я не боюсь верстки и могу делать
+                                    адаптивные сайты для себя и друзей. Спасибо
+                                    за отличный курс и поддержку на всех этапах
+                                    обучения!
+                                </p>
+                            </div>
+                            <div class="line2 mt-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="buy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center text-uppercase color1 mb-5">
+                            Покупка курса
+                        </h2>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-5 col-sm-12">
+                        <img
+                            src="https://placehold.co/200x400/png"
+                            alt="Course item"
+                            class="img-fluid mx-auto d-block"
+                        />
+                    </div>
+                    <div class="col-lg-7 col-sm-12">
+                        <p>
+                            Обучающий курс по изучению языка гипертекстовой
+                            разметки HTML и каскадных таблиц стилей CSS от
+                            автора образовательного канала ITDoctor. Это
+                            практический видеокурс: в каждой главе теоретический
+                            материал будет закрепляться множеством наглядных
+                            примеров кода.
+                        </p>
+                        <ul>
+                            <li>35 практических уроков</li>
+                            <li>Продолжительность 5 часов</li>
+                            <li>Готовые примеры кода</li>
+                            <li>Никаких ограничений по времени</li>
+                            <li>7 домашних заданий</li>
+                        </ul>
+                        <a
+                            href="#footer"
+                            class="btn btn-itd btn-lg text-uppercase"
+                            >Купить</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="footer-icons">
+                            <a
+                                href=""
+                                target="_blank"
+                                class="footer-icon-circle"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor"
+                                    class="bi bi-youtube"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                href=""
+                                target="_blank"
+                                class="footer-icon-circle"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor"
+                                    class="bi bi-envelope-at"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"
+                                    />
+                                    <path
+                                        d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                href=""
+                                target="_blank"
+                                class="footer-icon-circle"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor"
+                                    class="bi bi-telegram"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                href=""
+                                target="_blank"
+                                class="footer-icon-circle"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor"
+                                    class="bi bi-instagram"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                href=""
+                                target="_blank"
+                                class="footer-icon-circle"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor"
+                                    class="bi bi-github"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                href=""
+                                target="_blank"
+                                class="footer-icon-circle"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor"
+                                    class="bi bi-gitlab"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="m15.734 6.1-.022-.058L13.534.358a.57.57 0 0 0-.563-.356.6.6 0 0 0-.328.122.6.6 0 0 0-.193.294l-1.47 4.499H5.025l-1.47-4.5A.572.572 0 0 0 2.47.358L.289 6.04l-.022.057A4.044 4.044 0 0 0 1.61 10.77l.007.006.02.014 3.318 2.485 1.64 1.242 1 .755a.67.67 0 0 0 .814 0l1-.755 1.64-1.242 3.338-2.5.009-.007a4.05 4.05 0 0 0 1.34-4.668Z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5
+                            class="modal-title"
+                            id="exampleModalLabel"
+                        >
+                            Трейлер курса
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="embedded-container">
+                            <iframe
+                                src="https://youtu.be/dQw4w9WgXcQ?si=hHetwWO91ZzkXlfs"
+                                frameborder="0"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+        <!-- <script src="app.js"></script> -->
+    </body>
+</html>
